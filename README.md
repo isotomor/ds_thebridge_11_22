@@ -1,4 +1,4 @@
-# Bootcamp - Data Science - Junio 2022 - The Bridge
+# Bootcamp - Data Science - Noviembre 2022 - The Bridge
 
 
 ![The Bridge](./1-Ramp_Up/Presentaciones/img/TheBridge_logo.png)
@@ -29,3 +29,11 @@
 **Lead Instructor**: *Miguel Ángel Nievas Fuertes*
 
 - miguel.nievas@thebridgeschool.es
+
+**Teacher Assistant**: *Javier Tenorio Ruiz*
+
+- javier.tenorio@thebridgeschool.es
+
+**Teacher Assistant**: *Mario Sabrás Ramírez*
+
+- mario.sabras@thebridgeschool.es
