@@ -1,10 +1,17 @@
 import numpy as np
 import random
 
+dict_caracteres = {"vacio":" ", "barco":"O", "tocado":"X", "agua":"-"}
+lista_caracteres = [" ", "O", "X", "-"]
 
 def inicializar_tablero(tamaño=10):
     tablero = np.full((tamaño,tamaño), " ")
     return tablero
+
+def colocar_barcos(lista_barcos, tablero):
+    for barco in lista_barcos:
+        tablero = colocar_barco(barco, tablero)
+    return tablero 
 
 def colocar_barco(barco, tablero):
     for coordenada in barco:

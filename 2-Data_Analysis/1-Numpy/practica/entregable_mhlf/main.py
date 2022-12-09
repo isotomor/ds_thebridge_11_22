@@ -1,5 +1,4 @@
-from  functions import *
-
+from functions import *
 
 tablero = inicializar_tablero()
 barco_aleatorio = generar_b_aleatorio(3)
