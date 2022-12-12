@@ -4,6 +4,9 @@ import random
 dict_caracteres = {"vacio":" ", "barco":"O", "tocado":"X", "agua":"-"}
 lista_caracteres = [" ", "O", "X", "-"]
 
+def print_var(var):
+    print(var)
+
 def inicializar_tablero(tamaño=10):
     tablero = np.full((tamaño,tamaño), " ")
     return tablero
