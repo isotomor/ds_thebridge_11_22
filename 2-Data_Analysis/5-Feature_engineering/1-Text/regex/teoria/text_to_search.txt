@@ -1,6 +1,7 @@
 abcdefghijklmnopqurtuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 1234567890
+áéíóú
 Ha HaHa ?Ha
 MetaCharacters (Need to be escaped):
 . ^ $ * + ? { } [ ] \ | ( )
