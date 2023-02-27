@@ -72,19 +72,44 @@ def book_title_body():
         return jsonify(results)
 
 # 5.Ruta para añadir un libro mediante un json en la llamada
-
-
+@app.route('/v1/add_book', methods=['POST'])
+def post_book():
+    data = request.get_json()
+    books.append(data)
+    return jsonify(books)
 
 # 6.Ruta para añadir un libro mediante parámetros
-
+@app.route('/v2/add_book', methods=['POST'])
+def post_book_v2():
+    data = {}
+    data['id'] = request.args['id']
+    data['title'] = request.args['title']
+    data['author'] = request.args['author']
+    data['first_sentence'] = request.args['first_sentence']
+    data['published'] = request.args['published']
+    books.append(data)
+    return jsonify(books)
  
 
 # 7.Ruta para modificar un libro
-
+@app.route('/v3/book', methods=['PUT'])
+def put_book():
+    published = request.args['published']
+    title = request.args['title']
+    for book in books:
+        if book['title'] == title:
+            book['published'] = published
+    return jsonify(books)
 
 
 # 8.Ruta para eliminar un libro
-
+@app.route('/v4/book', methods=['DELETE'])
+def delete_book():
+    id = int(request.args['id'])
+    for book in books:
+        if book['id'] == id:
+            books.remove(book)
+    return jsonify(books)
 
 
 app.run()
