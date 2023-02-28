@@ -14,7 +14,7 @@ app.config['DEBUG'] = True
 def hello():
     return "Bienvenido a mi API del modelo advertising"
 
-# 1. Wndpoint que devuelva la predicción de los nuevos datos enviados mediante argumentos en la llamada
+# 1. Endpoint que devuelva la predicción de los nuevos datos enviados mediante argumentos en la llamada
 @app.route('/v1/predict', methods=['GET'])
 def predict():
     model = pickle.load(open('data/advertising_model','rb'))
